@@ -1,0 +1,39 @@
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.overlay {
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    background-color: #00000099;
+}
+.content {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index: 1;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .headLine {
+    text-wrap: nowrap;
+}
+.content .landingContent {
+
+}
+video {
+    width: 100%;
+    height: 100%;
+    max-height: 92.3vh;
+    object-fit: cover;
+}
