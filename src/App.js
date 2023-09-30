@@ -18,13 +18,9 @@ const darkTheme = createTheme({
 function App() {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        window.onload = () => {
+        setTimeout(() => {
             setLoading(false);
-        };
-
-        return () => {
-            window.onload = null;
-        };
+        }, 2000);
     }, []);
     return (
         <ThemeProvider theme={darkTheme}>
