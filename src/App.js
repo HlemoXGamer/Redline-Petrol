@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import TheHeader from "./components/UI/TheHeader/TheHeader";
 import HomePage from "./pages/HomePage/HomePage";
 import TheFooter from "./components/UI/TheFooter/TheFooter";
-import { RingLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 
 // Assets
 import "./App.css";
@@ -26,7 +26,7 @@ function App() {
         <ThemeProvider theme={darkTheme}>
             {loading ? (
                 <div className="Loader">
-                    <RingLoader color="#ff6b00" size={100} />
+                    <HashLoader color="#ff6b00" size={100} />
                 </div>
             ) : (
                 <>
