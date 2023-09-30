@@ -21,6 +21,10 @@ function App() {
         window.onload = () => {
             setLoading(false);
         };
+
+        return () => {
+            window.onload = null;
+        };
     }, []);
     return (
         <ThemeProvider theme={darkTheme}>
